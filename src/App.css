@@ -1,0 +1,138 @@
+.App {
+	background-image: radial-gradient(circle, #9f00af, #5d57d4, #0079de, #008fd2, #089fbe);
+}
+
+.card-container {
+	box-shadow: 5px 5px 10px 5px rgb(44, 44, 44, 0.4);
+	animation: animationOne 2s;
+
+}
+
+.steps {
+	padding: 18px;
+	height: 120px;
+	margin-top: -10px !important;
+	z-index: 1;
+	display: flex;
+	margin-bottom: 30px;
+	padding-left: 28%;
+	background-color: rgb(242, 242, 242);
+	box-shadow: 5px 5px 10px 5px rgb(44, 44, 44, 0.4);
+}
+
+.ant-form-item-explain-error {
+	text-align: right;
+}
+
+.container-form {
+	width: 100% !important;
+}
+
+.ant-upload-list-item-error {
+	color: rgb(0, 153, 255) !important;
+}
+
+.ant-upload-list-item-error span{
+	color: rgb(0, 153, 255) !important;
+}
+
+.ant-form-item-has-error {
+	height: 33px !important;
+}
+
+.ant-form {
+	margin: auto;
+	gap: 25px;
+	margin-bottom: 50px;
+	height: 300px !important;
+	animation: front 2s;
+}
+
+.ant-form.back {
+	animation: back 2s;
+}
+
+@keyframes back {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	
+}
+
+.ant-form.front {
+	animation: front 2s;
+}
+
+@keyframes front {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	100% {
+		opacity: 1;
+	}
+	
+}
+
+@keyframes animationOne {
+	0% {
+		transform: translateX(150px);
+		opacity: 0;
+	}
+}
+
+.ant-steps {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.ant-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.ant-col-8 {
+	align-self: center;
+}
+
+.ant-input {
+	width: 45vw !important;
+	font-weight: lighter !important;
+	background-color: rgb(241, 241, 241) !important;
+	box-shadow: 2px 2px 3px 2px rgba(205, 205, 205, 0.323);
+}
+
+.ant-picker {
+	background-color: rgb(241, 241, 241) !important;
+}
+
+@media (max-width: 600px) {
+	.card-container {
+		height: 90% !important;
+	}
+	.date label {
+		margin-left: 50px !important;
+	}
+	.ant-form {
+		margin: auto;
+		gap: 0px;
+	}
+	.ant-steps {
+		height: 180px;
+		margin-bottom: 50px;
+	}
+	.buttons {
+		margin-top: 30px;
+	}
+	.container-form {
+		padding: 10px;
+		border: none !important;
+	}
+}
+
